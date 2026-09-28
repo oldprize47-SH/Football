@@ -1,26 +1,41 @@
 # Football Lineup Website
 
-![Football Lineup Website overview](assets/portfolio-cover.png)
+**An early HTML project organising a football lineup into an overview and four position pages.**
 
-A small static website organised around a football lineup and position-specific pages. It is an early web exercise, separate from the engineering flagship projects.
+![A lineup you can browse.](assets/readme-overview.png)
 
-[Portfolio home](https://github.com/oldprize47-SH) · [Original repository](https://github.com/sangheon47/fifaweb)
+[What I built](#what-i-built) · [My role](#my-role) · [Code and reproduction](#code-and-reproduction) · [Portfolio](https://github.com/oldprize47-SH)
 
-[Original project README](README.original.md)
+## What I built
 
-## Contribution and context
+| Deliverable | What it does | Explore |
+|---|---|---|
+| **Landing page** | Start the site locally | [Source / result](main.html) |
+| **Defenders** | Position-page example | [Source / result](df.html) |
+| **Forwards** | Another position-page example | [Source / result](fw.html) |
+
+### Result at a glance
+
+Source and paths inspected. No cross-browser or accessibility audit has been completed.
+
+![Lineup artwork included in the original project](best11.png)
+
+*Original project artwork; this is not a newly captured browser screenshot.*
+
+## My role
 
 The page implementation is presented as a learning project. Player imagery and other third-party assets retain their original ownership.
 
-## Code map
+## How it works
 
-| Entry | Purpose |
-|---|---|
-| [main.html](main.html) | Landing page |
-| [gk.html](gk.html) | Goalkeeper page |
-| [df.html](df.html) | Defender page |
-| [mf.html](mf.html) | Midfielder page |
-| [fw.html](fw.html) | Forward page |
+```mermaid
+flowchart LR
+    N0["Team overview"] --> N1
+    N1["Choose a position"] --> N2
+    N2["Explore players"]
+```
+
+## Code and reproduction
 
 ## Local viewing
 
@@ -34,9 +49,10 @@ Then visit `http://127.0.0.1:8000/main.html`. This binds to the local computer.
 HTML sources and repository paths were inspected; a cross-browser or accessibility
 review was not completed. No GitHub Pages deployment was enabled by this update.
 
-## Archive policy
+## Source and credits
 
-The fork retains upstream history, source attributions and course material. The
-portfolio documentation does not assign a new licence or claim sole authorship
-of inherited code. Current checks are stated above; an untested component is not
-presented as verified.
+[Original repository](https://github.com/sangheon47/fifaweb) · [Portfolio home](https://github.com/oldprize47-SH)
+
+[Original README](README.original.md) is retained alongside the source history.
+
+Course scaffolding, team contributions and third-party assets retain their original attribution. This documentation does not grant a new licence.
