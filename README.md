@@ -10,6 +10,8 @@
 
 ## 한국어
 
+[코드 읽는 순서](#코드-따라-읽기)
+
 
 
 축구 라인업을 중심으로 구성한 정적 HTML 사이트입니다. 메인 페이지는 골키퍼, 수비수, 미드필더, 공격수의 별도 페이지로 연결되며, 로컬에 저장된 선수 이미지를 사용합니다.
@@ -24,11 +26,11 @@
 
 
 
-![프로젝트 목표: football-lineup-web](docs/goals/project-focus-v1.png)
+![프로젝트 목표: football-lineup-web](docs/goals/goal.png)
 
 
 
-AI로 생성한 콘셉트 일러스트입니다. 기기의 외형, 인터페이스 배치, 예시 그래픽은 설명을 위한 표현이며, 실제 프로젝트 사진이나 측정 결과가 아닙니다.
+<sub>AI 생성 개념도</sub>
 
 
 
@@ -48,7 +50,7 @@ AI로 생성한 콘셉트 일러스트입니다. 기기의 외형, 인터페이�
 
 
 
-문서화된 프로젝트 내용과 코드를 바탕으로 흐름을 살펴볼 수 있도록 재구성했습니다. 아래 설명에서 결과와 함께 검증한 범위와 한계를 확인할 수 있습니다. [SVG](docs/flowcharts/football.svg)
+<sub>[SVG](docs/flowcharts/football.svg)</sub>
 
 
 
@@ -63,6 +65,20 @@ AI로 생성한 콘셉트 일러스트입니다. 기기의 외형, 인터페이�
 페이지와 자산을 연결하는 방법을 익히기 위한 실습으로, 데이터를 바탕으로 라인업을 생성하는 기능은 포함하지 않습니다. 축구 콘텐츠는 탐색 구조에 구체적인 주제를 부여합니다. Sangheon Park가 초기 웹 개발 실습으로 제작했습니다.
 
 
+
+### 코드 따라 읽기
+
+아래 순서는 파일의 역할과 연결을 이해하기 위한 안내입니다. 독립 과제나 보드별 프로그램은 한꺼번에 실행하지 않고 해당 항목의 실행 안내를 따릅니다.
+
+| 순서 | 파일 | 역할과 다음 단계 |
+|---|---|---|
+| 1 | [main.html](main.html) | 메인 화면에서 포지션 페이지로 향하는 링크를 읽습니다. |
+| 2 | [gk.html](gk.html) | 골키퍼 페이지의 이미지 경로와 메인 페이지로 돌아가는 연결을 확인합니다. |
+| 3 | [df.html](df.html) | 수비수 페이지입니다. 같은 방식으로 mf.html과 fw.html도 비교합니다. |
+| 4 | [mf.html](mf.html) | 미드필더 정보와 이미지가 HTML에 직접 들어가는 정적 페이지입니다. |
+| 5 | [fw.html](fw.html) | 공격수 페이지입니다. HTML 수정 후 브라우저를 새로고침해 결과를 확인합니다. |
+
+[기존 상세 튜토리얼과 원문](README.original.md)도 함께 보존했습니다.
 
 ### 프로젝트 보기
 
@@ -112,6 +128,8 @@ python -m http.server 8000 --bind 127.0.0.1
 
 ## English
 
+[Code walkthrough](#code-walkthrough)
+
 
 
 **Football Lineup Website**
@@ -130,11 +148,11 @@ Let visitors explore a football lineup through linked position pages and player 
 
 
 
-![Project goal: football-lineup-web](docs/goals/project-focus-v1.png)
+![Project goal: football-lineup-web](docs/goals/goal.png)
 
 
 
-AI-generated concept illustration. Device appearance, interface layout and example graphics are illustrative, not project photographs or measured results.
+<sub>AI-generated concept illustration</sub>
 
 
 
@@ -154,7 +172,7 @@ The same page structure could be adapted into a small club or school-team showca
 
 
 
-This overview helps you follow the project through its documentation and code. The sections below explain the results and the limits of verification. [SVG](docs/flowcharts/football.svg)
+<sub>[SVG](docs/flowcharts/football.svg)</sub>
 
 
 
@@ -169,6 +187,20 @@ The site is organised as a set of static pages. The main page introduces the lin
 The exercise focuses on connecting pages and assets. It does not include data-driven lineup generation. The football content gives the navigation a concrete subject. It was created by Sangheon Park as an early web-development exercise.
 
 
+
+### Code walkthrough
+
+Use this order to understand each file and its connections. Independent exercises and board targets are not one executable; follow the relevant run instructions below.
+
+| Step | File | Role and next step |
+|---|---|---|
+| 1 | [main.html](main.html) | Start with links from the main page to each position. |
+| 2 | [gk.html](gk.html) | Inspect goalkeeper images and navigation back to the main page. |
+| 3 | [df.html](df.html) | Inspect defenders, then compare the same structure in mf.html and fw.html. |
+| 4 | [mf.html](mf.html) | Midfielder information and images are embedded in a static HTML page. |
+| 5 | [fw.html](fw.html) | This is the forward page; refresh the browser after editing HTML to inspect the result. |
+
+The [original tutorial and documentation](README.original.md) remain available in full.
 
 ### Viewing the project
 
@@ -207,4 +239,3 @@ The files and their paths have been inspected. A cross-browser or accessibility 
 
 
 [Original repository](https://github.com/sangheon47/fifaweb). Original history and attribution are retained.
-
